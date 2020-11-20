@@ -4,7 +4,7 @@ var tableData = data;
 // YOUR CODE HERE!
 var tbody = d3.select("tbody");
 var button = d3.select("#filter-btn");
-var form = d3.select(".filters");
+var form = d3.select("#filters");
 
 //button.on("click", runEnter);
 form.on("change",runEnter);
@@ -22,11 +22,10 @@ function printTable(tData){
 printTable(tableData);
 
 function runEnter(){
-
     d3.event.preventDefault();
     var filterElement = {};
 
-    var inputElement = d3.select(this).select("input");
+    var inputElement = d3.select(this).select("#input");
     var elementValue = inputElement.property("value");
     var filterID = inputElement.attr("id");
     if (elementValue){
