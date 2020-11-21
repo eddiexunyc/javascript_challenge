@@ -76,29 +76,5 @@ function runEnter(){
         filterData = tableData.filter(ufoData => ufoData.shape === shapeValue);
         printTable(filterData);
     }
-
-    // d3.event.preventDefault();
-    // var filterElement = {};
-
-    // var inputElement = d3.select(this).select("input");
-    // var elementValue = inputElement.property("value");
-    // var filterID = inputElement.attr("id");
-    // if (elementValue){
-    //     filterElement[filterID] = elementValue;
-    //     console.log(filterElement);
-    // }
-    // else {
-    //     delete filterElement[filterID];
-    // }
-    
-    // tbody.html("");
-    // var filterData = tableData;
-
-    // Object.entries(filterElement).forEach(function([key, value]){
-    //     filterData = filterData.filter(row => row[key] === value);
-    //     console.log(filterData);
-    // });
-    
-    // printTable(filterData);
 };
 
